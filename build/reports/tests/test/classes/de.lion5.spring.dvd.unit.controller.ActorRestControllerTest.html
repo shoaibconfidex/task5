@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ActorRestControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ActorRestControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/de.lion5.spring.dvd.unit.controller.html">de.lion5.spring.dvd.unit.controller</a> &gt; ActorRestControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.371s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">deleteRequestActorById_noContent()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteRequestActorById_notFound()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getRequestActorById_minimalFullAPICompliantResponse()</td>
+<td class="success">0.149s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getRequestActorById_notFound()</td>
+<td class="success">0.157s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getRequestActors_minimalFullAPICompliantResponse()</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-07-06 00:50:34.695  INFO 20348 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.lion5.spring.dvd.unit.controller.ActorRestControllerTest], using SpringBootContextLoader
+2021-07-06 00:50:34.697  INFO 20348 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [de.lion5.spring.dvd.unit.controller.ActorRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-06 00:50:34.697  INFO 20348 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [de.lion5.spring.dvd.unit.controller.ActorRestControllerTest]: ActorRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-06 00:50:34.714  INFO 20348 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration de.lion5.spring.dvd.DvdStoreApplication for test class de.lion5.spring.dvd.unit.controller.ActorRestControllerTest
+2021-07-06 00:50:34.717  INFO 20348 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-06 00:50:34.718  INFO 20348 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@18acb8b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@25ddfc52, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d161587, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dc26440, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d63279, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4aa3615d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4794ffa3, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@291a6375, org.springframework.test.context.event.EventPublishingTestExecutionListener@18eec9d5, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4916ea1c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@291f6d7a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5364a2e7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3daa693f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4312229c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@11b4f339, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@67b11872]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+2021-07-06 00:50:34.774  INFO 20348 --- [    Test worker] d.l.s.d.u.c.ActorRestControllerTest      : Starting ActorRestControllerTest on DESKTOP-NSA96V2 with PID 20348 (started by shoai in C:\Users\shoai\OneDrive\Documents\GitHub\workshop-spring-boot\solutions\task5)
+2021-07-06 00:50:34.775  INFO 20348 --- [    Test worker] d.l.s.d.u.c.ActorRestControllerTest      : No active profile set, falling back to default profiles: default
+2021-07-06 00:50:35.227  INFO 20348 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-07-06 00:50:35.280  INFO 20348 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 4 JPA repository interfaces.
+2021-07-06 00:50:35.525  INFO 20348 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@54f8c4e4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:50:35.542  INFO 20348 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-07-06 00:50:35.700  INFO 20348 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 00:50:35.756  INFO 20348 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-06 00:50:35.775  INFO 20348 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-07-06 00:50:35.785 TRACE 20348 --- [    Test worker] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'de.lion5.spring.dvd.service.MovieService.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2021-07-06 00:50:35.868  INFO 20348 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-07-06 00:50:35.869  INFO 20348 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-07-06 00:50:35.954  WARN 20348 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-06 00:50:36.742  INFO 20348 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38b1e91f, org.springframework.security.web.context.SecurityContextPersistenceFilter@660f9cb4, org.springframework.security.web.header.HeaderWriterFilter@3c038483, org.springframework.security.web.csrf.CsrfFilter@7dcdcbf8, org.springframework.security.web.authentication.logout.LogoutFilter@1217bc7e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65618a89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@150f1c84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34f2b1e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@640de07d, org.springframework.security.web.session.SessionManagementFilter@180e857c, org.springframework.security.web.access.ExceptionTranslationFilter@4ebdfa5f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@769ebb06]
+2021-07-06 00:50:36.937  INFO 20348 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-06 00:50:36.938  INFO 20348 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-06 00:50:37.183  INFO 20348 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-06 00:50:37.849  INFO 20348 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-07-06 00:50:37.849  INFO 20348 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-07-06 00:50:37.868  INFO 20348 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 18 ms
+2021-07-06 00:50:37.877  INFO 20348 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-07-06 00:50:38.002  INFO 20348 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-07-06 00:50:38.005  INFO 20348 --- [    Test worker] d.l.s.d.u.c.ActorRestControllerTest      : Started ActorRestControllerTest in 3.284 seconds (JVM running for 25.357)
+2021-07-06 00:50:38.007 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata@5ab964eb] for key [public abstract java.util.List org.springframework.data.jpa.repository.JpaRepository.saveAll(java.lang.Iterable)] to thread [Test worker]
+2021-07-06 00:50:38.009 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.jdbc.datasource.ConnectionHolder@45c752b1] for key [HikariDataSource (HikariPool-3)] to thread [Test worker]
+2021-07-06 00:50:38.009 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@13fd7e1b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.009 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Initializing transaction synchronization
+2021-07-06 00:50:38.009 TRACE 20348 --- [    Test worker] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll]
+2021-07-06 00:50:38.011 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Retrieved value [org.springframework.orm.jpa.EntityManagerHolder@13fd7e1b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] bound to thread [Test worker]
+2021-07-06 00:50:38.011 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actor0_.id as id1_1_2_,
+        actor0_.birthday as birthday2_1_2_,
+        actor0_.name as name3_1_2_,
+        actor0_.won_oscar as won_osca4_1_2_,
+        movies1_.actor_id as actor_id2_4_4_,
+        movie2_.id as movie_id1_4_4_,
+        movie2_.id as id1_3_0_,
+        movie2_.cover_image as cover_im2_3_0_,
+        movie2_.created_by_id as created_6_3_0_,
+        movie2_.film_studio_id as film_stu7_3_0_,
+        movie2_.title as title3_3_0_,
+        movie2_.won_oscar as won_osca4_3_0_,
+        movie2_.year as year5_3_0_,
+        filmstudio3_.id as id1_2_1_,
+        filmstudio3_.name as name2_2_1_,
+        filmstudio3_.since as since3_2_1_ 
+    from
+        actor actor0_ 
+    left outer join
+        movie_actor movies1_ 
+            on actor0_.id=movies1_.actor_id 
+    left outer join
+        movie movie2_ 
+            on movies1_.movie_id=movie2_.id 
+    left outer join
+        film_studio filmstudio3_ 
+            on movie2_.film_studio_id=filmstudio3_.id 
+    where
+        actor0_.id=?
+2021-07-06 00:50:38.012 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.022 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Retrieved value [org.springframework.orm.jpa.EntityManagerHolder@13fd7e1b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] bound to thread [Test worker]
+2021-07-06 00:50:38.022 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actor0_.id as id1_1_2_,
+        actor0_.birthday as birthday2_1_2_,
+        actor0_.name as name3_1_2_,
+        actor0_.won_oscar as won_osca4_1_2_,
+        movies1_.actor_id as actor_id2_4_4_,
+        movie2_.id as movie_id1_4_4_,
+        movie2_.id as id1_3_0_,
+        movie2_.cover_image as cover_im2_3_0_,
+        movie2_.created_by_id as created_6_3_0_,
+        movie2_.film_studio_id as film_stu7_3_0_,
+        movie2_.title as title3_3_0_,
+        movie2_.won_oscar as won_osca4_3_0_,
+        movie2_.year as year5_3_0_,
+        filmstudio3_.id as id1_2_1_,
+        filmstudio3_.name as name2_2_1_,
+        filmstudio3_.since as since3_2_1_ 
+    from
+        actor actor0_ 
+    left outer join
+        movie_actor movies1_ 
+            on actor0_.id=movies1_.actor_id 
+    left outer join
+        movie movie2_ 
+            on movies1_.movie_id=movie2_.id 
+    left outer join
+        film_studio filmstudio3_ 
+            on movie2_.film_studio_id=filmstudio3_.id 
+    where
+        actor0_.id=?
+2021-07-06 00:50:38.023 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.025 TRACE 20348 --- [    Test worker] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll]
+2021-07-06 00:50:38.026 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Clearing transaction synchronization
+2021-07-06 00:50:38.027 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@13fd7e1b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.027 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.jdbc.datasource.ConnectionHolder@45c752b1] for key [HikariDataSource (HikariPool-3)] from thread [Test worker]
+2021-07-06 00:50:38.027 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata@5ab964eb] for key [public abstract java.util.List org.springframework.data.jpa.repository.JpaRepository.saveAll(java.lang.Iterable)] from thread [Test worker]
+2021-07-06 00:50:38.027 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata@732caed8] for key [public abstract java.util.List org.springframework.data.jpa.repository.JpaRepository.saveAll(java.lang.Iterable)] to thread [Test worker]
+2021-07-06 00:50:38.028 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.jdbc.datasource.ConnectionHolder@4c26377f] for key [HikariDataSource (HikariPool-3)] to thread [Test worker]
+2021-07-06 00:50:38.028 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@1b71036b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.028 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Initializing transaction synchronization
+2021-07-06 00:50:38.028 TRACE 20348 --- [    Test worker] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll]
+2021-07-06 00:50:38.030 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Retrieved value [org.springframework.orm.jpa.EntityManagerHolder@1b71036b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] bound to thread [Test worker]
+2021-07-06 00:50:38.030 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        movie0_.id as id1_3_1_,
+        movie0_.cover_image as cover_im2_3_1_,
+        movie0_.created_by_id as created_6_3_1_,
+        movie0_.film_studio_id as film_stu7_3_1_,
+        movie0_.title as title3_3_1_,
+        movie0_.won_oscar as won_osca4_3_1_,
+        movie0_.year as year5_3_1_,
+        filmstudio1_.id as id1_2_0_,
+        filmstudio1_.name as name2_2_0_,
+        filmstudio1_.since as since3_2_0_ 
+    from
+        movie movie0_ 
+    left outer join
+        film_studio filmstudio1_ 
+            on movie0_.film_studio_id=filmstudio1_.id 
+    where
+        movie0_.id=?
+2021-07-06 00:50:38.031 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.032 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actors0_.movie_id as movie_id1_4_0_,
+        actors0_.actor_id as actor_id2_4_0_,
+        actor1_.id as id1_1_1_,
+        actor1_.birthday as birthday2_1_1_,
+        actor1_.name as name3_1_1_,
+        actor1_.won_oscar as won_osca4_1_1_ 
+    from
+        movie_actor actors0_ 
+    inner join
+        actor actor1_ 
+            on actors0_.actor_id=actor1_.id 
+    where
+        actors0_.movie_id=?
+2021-07-06 00:50:38.033 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.035 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Retrieved value [org.springframework.orm.jpa.EntityManagerHolder@1b71036b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] bound to thread [Test worker]
+2021-07-06 00:50:38.035 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        movie0_.id as id1_3_1_,
+        movie0_.cover_image as cover_im2_3_1_,
+        movie0_.created_by_id as created_6_3_1_,
+        movie0_.film_studio_id as film_stu7_3_1_,
+        movie0_.title as title3_3_1_,
+        movie0_.won_oscar as won_osca4_3_1_,
+        movie0_.year as year5_3_1_,
+        filmstudio1_.id as id1_2_0_,
+        filmstudio1_.name as name2_2_0_,
+        filmstudio1_.since as since3_2_0_ 
+    from
+        movie movie0_ 
+    left outer join
+        film_studio filmstudio1_ 
+            on movie0_.film_studio_id=filmstudio1_.id 
+    where
+        movie0_.id=?
+2021-07-06 00:50:38.035 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.037 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actors0_.movie_id as movie_id1_4_0_,
+        actors0_.actor_id as actor_id2_4_0_,
+        actor1_.id as id1_1_1_,
+        actor1_.birthday as birthday2_1_1_,
+        actor1_.name as name3_1_1_,
+        actor1_.won_oscar as won_osca4_1_1_ 
+    from
+        movie_actor actors0_ 
+    inner join
+        actor actor1_ 
+            on actors0_.actor_id=actor1_.id 
+    where
+        actors0_.movie_id=?
+2021-07-06 00:50:38.037 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.039 TRACE 20348 --- [    Test worker] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.saveAll]
+2021-07-06 00:50:38.040 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    delete 
+    from
+        movie_actor 
+    where
+        movie_id=?
+2021-07-06 00:50:38.040 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.042 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+2021-07-06 00:50:38.042 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.042 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2021-07-06 00:50:38.044 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    delete 
+    from
+        movie_actor 
+    where
+        movie_id=?
+2021-07-06 00:50:38.044 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.045 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+2021-07-06 00:50:38.045 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.045 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [1]
+2021-07-06 00:50:38.048 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Clearing transaction synchronization
+2021-07-06 00:50:38.048 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@1b71036b] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.048 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.jdbc.datasource.ConnectionHolder@4c26377f] for key [HikariDataSource (HikariPool-3)] from thread [Test worker]
+2021-07-06 00:50:38.048 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata@732caed8] for key [public abstract java.util.List org.springframework.data.jpa.repository.JpaRepository.saveAll(java.lang.Iterable)] from thread [Test worker]
+2021-07-06 00:50:38.049 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata@715274e3] for key [public abstract java.lang.Object org.springframework.data.repository.CrudRepository.save(java.lang.Object)] to thread [Test worker]
+2021-07-06 00:50:38.049 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.jdbc.datasource.ConnectionHolder@7168342] for key [HikariDataSource (HikariPool-3)] to thread [Test worker]
+2021-07-06 00:50:38.049 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@ac01315] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.049 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Initializing transaction synchronization
+2021-07-06 00:50:38.049 TRACE 20348 --- [    Test worker] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2021-07-06 00:50:38.050 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Retrieved value [org.springframework.orm.jpa.EntityManagerHolder@ac01315] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] bound to thread [Test worker]
+2021-07-06 00:50:38.050 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actor0_.id as id1_1_2_,
+        actor0_.birthday as birthday2_1_2_,
+        actor0_.name as name3_1_2_,
+        actor0_.won_oscar as won_osca4_1_2_,
+        movies1_.actor_id as actor_id2_4_4_,
+        movie2_.id as movie_id1_4_4_,
+        movie2_.id as id1_3_0_,
+        movie2_.cover_image as cover_im2_3_0_,
+        movie2_.created_by_id as created_6_3_0_,
+        movie2_.film_studio_id as film_stu7_3_0_,
+        movie2_.title as title3_3_0_,
+        movie2_.won_oscar as won_osca4_3_0_,
+        movie2_.year as year5_3_0_,
+        filmstudio3_.id as id1_2_1_,
+        filmstudio3_.name as name2_2_1_,
+        filmstudio3_.since as since3_2_1_ 
+    from
+        actor actor0_ 
+    left outer join
+        movie_actor movies1_ 
+            on actor0_.id=movies1_.actor_id 
+    left outer join
+        movie movie2_ 
+            on movies1_.movie_id=movie2_.id 
+    left outer join
+        film_studio filmstudio3_ 
+            on movie2_.film_studio_id=filmstudio3_.id 
+    where
+        actor0_.id=?
+2021-07-06 00:50:38.050 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2021-07-06 00:50:38.052 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        movie0_.id as id1_3_1_,
+        movie0_.cover_image as cover_im2_3_1_,
+        movie0_.created_by_id as created_6_3_1_,
+        movie0_.film_studio_id as film_stu7_3_1_,
+        movie0_.title as title3_3_1_,
+        movie0_.won_oscar as won_osca4_3_1_,
+        movie0_.year as year5_3_1_,
+        filmstudio1_.id as id1_2_0_,
+        filmstudio1_.name as name2_2_0_,
+        filmstudio1_.since as since3_2_0_ 
+    from
+        movie movie0_ 
+    left outer join
+        film_studio filmstudio1_ 
+            on movie0_.film_studio_id=filmstudio1_.id 
+    where
+        movie0_.id=?
+2021-07-06 00:50:38.052 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.054 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actors0_.movie_id as movie_id1_4_0_,
+        actors0_.actor_id as actor_id2_4_0_,
+        actor1_.id as id1_1_1_,
+        actor1_.birthday as birthday2_1_1_,
+        actor1_.name as name3_1_1_,
+        actor1_.won_oscar as won_osca4_1_1_ 
+    from
+        movie_actor actors0_ 
+    inner join
+        actor actor1_ 
+            on actors0_.actor_id=actor1_.id 
+    where
+        actors0_.movie_id=?
+2021-07-06 00:50:38.055 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.056 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        movie0_.id as id1_3_1_,
+        movie0_.cover_image as cover_im2_3_1_,
+        movie0_.created_by_id as created_6_3_1_,
+        movie0_.film_studio_id as film_stu7_3_1_,
+        movie0_.title as title3_3_1_,
+        movie0_.won_oscar as won_osca4_3_1_,
+        movie0_.year as year5_3_1_,
+        filmstudio1_.id as id1_2_0_,
+        filmstudio1_.name as name2_2_0_,
+        filmstudio1_.since as since3_2_0_ 
+    from
+        movie movie0_ 
+    left outer join
+        film_studio filmstudio1_ 
+            on movie0_.film_studio_id=filmstudio1_.id 
+    where
+        movie0_.id=?
+2021-07-06 00:50:38.057 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.058 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        actors0_.movie_id as movie_id1_4_0_,
+        actors0_.actor_id as actor_id2_4_0_,
+        actor1_.id as id1_1_1_,
+        actor1_.birthday as birthday2_1_1_,
+        actor1_.name as name3_1_1_,
+        actor1_.won_oscar as won_osca4_1_1_ 
+    from
+        movie_actor actors0_ 
+    inner join
+        actor actor1_ 
+            on actors0_.actor_id=actor1_.id 
+    where
+        actors0_.movie_id=?
+2021-07-06 00:50:38.058 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.060 TRACE 20348 --- [    Test worker] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2021-07-06 00:50:38.061 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    delete 
+    from
+        movie_actor 
+    where
+        movie_id=?
+2021-07-06 00:50:38.061 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.062 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+2021-07-06 00:50:38.062 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.062 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2021-07-06 00:50:38.063 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+2021-07-06 00:50:38.063 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-07-06 00:50:38.063 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2021-07-06 00:50:38.064 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    delete 
+    from
+        movie_actor 
+    where
+        movie_id=?
+2021-07-06 00:50:38.065 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.065 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+2021-07-06 00:50:38.066 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.066 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [1]
+2021-07-06 00:50:38.067 DEBUG 20348 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+2021-07-06 00:50:38.067 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2021-07-06 00:50:38.067 TRACE 20348 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2021-07-06 00:50:38.068 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Clearing transaction synchronization
+2021-07-06 00:50:38.068 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@ac01315] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.068 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.jdbc.datasource.ConnectionHolder@7168342] for key [HikariDataSource (HikariPool-3)] from thread [Test worker]
+2021-07-06 00:50:38.069 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata@715274e3] for key [public abstract java.lang.Object org.springframework.data.repository.CrudRepository.save(java.lang.Object)] from thread [Test worker]
+2021-07-06 00:50:38.080 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@b7259e9] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.087  INFO 20348 --- [    Test worker] d.l.s.d.a.c.ActorRestController          : Get actor with id 1
+2021-07-06 00:50:38.226 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@b7259e9] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.241 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@74af4382] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.241  INFO 20348 --- [    Test worker] d.l.s.d.a.c.ActorRestController          : Get actor with id 1
+2021-07-06 00:50:38.329 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@74af4382] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.389 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@2bb2a8c2] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.391 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@2bb2a8c2] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.403 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@57dfd586] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.432 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@57dfd586] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+2021-07-06 00:50:38.444 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Bound value [org.springframework.orm.jpa.EntityManagerHolder@101f3db2] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] to thread [Test worker]
+2021-07-06 00:50:38.446 TRACE 20348 --- [    Test worker] .s.t.s.TransactionSynchronizationManager : Removed value [org.springframework.orm.jpa.EntityManagerHolder@101f3db2] for key [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@af37810] from thread [Test worker]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.4.1</a> at Jul 6, 2021, 12:50:55 AM</p>
+</div>
+</div>
+</body>
+</html>
